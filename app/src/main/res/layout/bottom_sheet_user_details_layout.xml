@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bottom_sheet_user_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone"
+    app:behavior_hideable="false"
+
+    app:behavior_peekHeight="90dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            app:civ_border_overlay="false"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:layout_toRightOf="@+id/civ_user_profile"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Scheduled"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingbar_user_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/civ_user_profile"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="1"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ratingbar_user_rating"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_car_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating"
+            android:layout_toLeftOf="@+id/iv_call"
+            android:layout_toRightOf="@+id/civ_user_profile"
+            android:maxLines="1"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_car_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_call"
+            android:layout_toRightOf="@+id/civ_user_profile"
+            android:layout_below="@id/tv_car_detail"
+            android:maxLines="1"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_car_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_car_color"
+            android:layout_toLeftOf="@+id/iv_call"
+            android:layout_toRightOf="@+id/civ_user_profile"
+            android:maxLines="1"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/tv_car_detail"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/call" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_picked_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/pickup_icon"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLines="3"
+            android:textColor="@color/black" />
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_below="@+id/tv_picked_up"-->
+        <!--android:layout_above="@+id/tv_drop_address"-->
+        <!--android:src="@drawable/location_line"/>-->
+        <TextView
+            android:id="@+id/tv_droped_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_picked_up"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baloon_orange"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLines="3"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_chat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/chat" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_grey" />
+
+    <Button
+        android:id="@+id/btn_user_ride_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/light_round_shape_solid_bluish_grey"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="CANCEL REQUEST"
+        android:textColor="#fff" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewswitcher_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/dialog_cancel_ride_layout" />
+
+    <include layout="@layout/dialog_cancel_ride_reason_layout" />
+</ViewSwitcher>

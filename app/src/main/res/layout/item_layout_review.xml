@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            app:civ_border_overlay="false"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_timestamp"
+            android:layout_toRightOf="@+id/civ_user_profile"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Manish Garg" />
+
+        <TextView
+            android:id="@+id/tv_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawablePadding="3dp"
+            android:drawableStart="@drawable/clock_icon"
+            android:gravity="center_vertical|center"
+            android:textSize="12sp"
+            tools:text="10:10 AM" />
+
+        <RatingBar
+            android:id="@+id/ratingbar_user_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/civ_user_profile"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="1"
+            android:theme="@style/RatingBar" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/civ_user_profile"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book" />
+
+</LinearLayout>

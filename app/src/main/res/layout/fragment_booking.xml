@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Schedule a Ride"
+        android:textColor="#444"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+
+    <ImageView
+        android:id="@+id/iv_timer_picker"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/ic_timer" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+
+    <TextView
+        android:id="@+id/tv_ride_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#444"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+
+    <Button
+        android:id="@+id/btn_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/light_round_shape_solid_bluish_grey"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="CONFIRM REQUEST"
+        android:textColor="#fff" />
+
+</LinearLayout>

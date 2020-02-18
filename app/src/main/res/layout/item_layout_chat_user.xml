@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_user_profile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="10dp"
+        app:civ_border_overlay="false"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_timestamp"
+        android:layout_toRightOf="@+id/civ_user_profile"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Manish Garg" />
+
+    <TextView
+        android:id="@+id/tv_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        tools:text="10:10 AM" />
+
+    <TextView
+        android:id="@+id/tv_last_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/civ_user_profile"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="12sp"
+        tools:text="Lorem ipsum et dolore magna as as sad." />
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+   >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+
+    <TextView
+        android:id="@+id/tv_pickup_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:maxLines="5"
+        android:padding="15dp"
+        android:text="Pickup Address: A-40 A, Industrial Area, City, State (123456)"
+        android:visibility="visible"
+        tools:text="Pickup Address: A-40 A, Industrial Area, City, State (123456)"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:maxLines="5"
+        android:padding="15dp"
+        android:text="Delivery Address: A-40 A, Industrial Area, City, State (123456)"
+        android:visibility="visible"
+        tools:text="Delivery Address: A-40 A, Industrial Area, City, State (123456)"
+        tools:visibility="visible" />
+
+</LinearLayout>

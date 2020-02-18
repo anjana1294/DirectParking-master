@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_menu_home"
+            android:checked="true"
+            android:icon="@drawable/nav_ic_home"
+            android:orderInCategory="1"
+            android:title="@string/nav_menu_home" />
+
+        <item
+            android:id="@+id/nav_menu_parking"
+            android:icon="@drawable/nav_ic_parking"
+            android:orderInCategory="2"
+            android:visible="false"
+            android:title="@string/nav_menu_parking" />
+
+        <item
+            android:id="@+id/nav_menu_accept_request"
+            android:icon="@drawable/nav_ic_accept_request"
+            android:orderInCategory="3"
+            android:title="@string/nav_menu_accept_request" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_menu_notifications"-->
+            <!--android:icon="@drawable/nav_ic_notifications"-->
+            <!--android:orderInCategory="4"-->
+            <!--android:title="@string/nav_menu_notifications"-->
+            <!--app:actionLayout="@layout/nav_drawer_notification_count" />-->
+
+        <item
+            android:id="@+id/nav_menu_settings"
+            android:icon="@drawable/nav_ic_settings"
+            android:orderInCategory="4"
+            android:title="@string/nav_menu_settings" />
+
+        <item
+            android:id="@+id/nav_menu_aboutus"
+            android:icon="@drawable/nav_ic_aboutus"
+            android:orderInCategory="5"
+            android:title="@string/nav_menu_aboutus" />
+
+    </group>
+
+    <item
+        android:id="@+id/nav_menu_logout"
+        android:icon="@drawable/nav_ic_logout"
+        android:orderInCategory="6"
+        android:title="@string/nav_menu_logout" />
+</menu>

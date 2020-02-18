@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.appolica.interactiveinfowindow.fragment.MapInfoWindowFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="left|center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:mapType="normal"
+        app:uiCompass="true"
+        app:uiRotateGestures="true"
+        app:uiScrollGestures="true"
+        app:uiTiltGestures="false"
+        app:uiZoomControls="false"
+        app:uiZoomGestures="true"
+        tools:layout_editor_absoluteY="-1dp"></fragment>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/iv_location_marker"
+        android:src="@drawable/ic_add_location" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/layout_location_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <include layout="@layout/layout_bottom_sheet" />
+
+    <include layout="@layout/bottom_sheet_user_details_layout" />
+
+    <include layout="@layout/layout_ride_action" />
+
+    <include layout="@layout/bottom_sheet_my_ride_cancel" />
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/light_round_shape_solid_bluish_grey"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_gravity="bottom"
+        android:text="Done"
+        android:visibility="gone"
+        android:textColor="#fff" />
+
+</android.support.design.widget.CoordinatorLayout>

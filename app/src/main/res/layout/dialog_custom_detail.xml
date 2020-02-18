@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    tools:background="@color/light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/light_round_shape_solid_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="22sp"
+            tools:text="Title!" />
+
+        <com.directparking.app.ui.custom.CustomScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            app:maxHeight="200dp">
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textSize="17sp"
+                tools:text="Description" />
+        </com.directparking.app.ui.custom.CustomScrollView>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/light_round_shape_solid_blue_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Close"
+            android:textAllCaps="true"
+            android:textColor="@color/btn_text_white_selector"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="@color/white"
+        app:civ_border_overlay="false"
+        app:civ_border_width="3dp" />
+
+</FrameLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/yellow"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:id="@+id/layout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="DIRECT PARKING"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nav_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="DIRECT PARKING"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_nav_profile"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                app:civ_border_overlay="false"
+                tools:src="@drawable/ic_default_profile" />
+
+            <TextView
+                android:id="@+id/nav_tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="4.9 ★" />
+
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/nav_tv_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fontFamily="sans-serif-medium"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="20sp"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nav_tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Edit Profile"
+        android:textColor="@color/trans_white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

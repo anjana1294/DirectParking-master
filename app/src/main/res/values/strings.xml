@@ -1,0 +1,170 @@
+<resources>
+
+    <string name="app_title">Direct Parking</string>
+
+    <string name="title_login">Sign In</string>
+    <string name="title_send">Send</string>
+
+    <string name="title_signup">Sign Up</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_request_ride">Request a Ride</string>
+
+    <string name="title_pickup_point">Pickup Point</string>
+    <string name="title_pickup_arriving">Pickup Arriving</string>
+    <string name="title_on_trip">On Trip</string>
+
+    <string name="title_my_profile">My Profile</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="title_submit">Submit</string>
+    <string name="title_save">Save</string>
+    <string name="title_confirm_ride">Confirm Request</string>
+    <string name="title_review_trip">Review Your Trip</string>
+    <string name="title_view_review_rating">Rating</string>
+    <string name="title_password_change">Change Password</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="cancel_title">Cancel Request</string>
+    <string name="cancel_confirmation_msg">Are you sure you want to cancel the ride?</string>
+    <string name="reason_cancel_title">Reason for Cancellation</string>
+
+    <string name="hint_forgot_password">Forgot Password?</string>
+    <string name="msg_forgot_password">Forgot your Password?</string>
+    <string name="msg_signin">Sign In To Direct Parking</string>
+    <string name="msg_signup">Don\'t have an account?</string>
+
+    <string name="hint_username">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_university">University</string>
+    <string name="hint_email">Email eg: abc@my.utsa.edu</string>
+    <string name="hint_confirm_email">Confirm Email</string>
+    <string name="hint_dob">Date of Birth (MM/DD/YYYY)</string>
+    <string name="hint_search">Search for products, categories…</string>
+    <string name="hint_datetime">Select date &amp; time</string>
+    <string name="hint_color">Color</string>
+    <string name="hint_model">Model</string>
+    <string name="hint_plate_no">License Plate #</string>
+    <string name="hint_car_make">Car Make</string>
+    <string name="hint_write_comment">WRITE YOUR COMMENT</string>
+
+    <string name="hint_licence_no">Driver\'s Licence #</string>
+    <string name="hint_privacy">Privacy Policy</string>
+    <string name="hint_tnc">Terms &amp; Condition</string>
+    <string name="university_name">University of Texas at San Antonio</string>
+
+    <string name="hint_pickup_location">Pickup Location</string>
+    <string name="hint_drop_location">Parking Spot Location</string>
+    <string name="hint_parking_lot_number">Parking Lot Name/Number</string>
+
+    <string name="label_schedule_time">Schedule Time</string>
+
+    <string name="empty_name_msg">Name can\'t be empty!</string>
+    <string name="empty_phone_msg">Phone number can\'t be empty!</string>
+    <string name="empty_email_msg">Email can\'t be empty!</string>
+    <string name="empty_confirm_email_msg">Confirm Email can\'t be empty!</string>
+    <string name="empty_dob_msg">Date of birth can\'t be empty!</string>
+    <string name="empty_password_msg">Password can\'t be empty!</string>
+    <string name="empty_confirm_password_msg">Confirm password can\'t be empty!</string>
+    <string name="empty_cancellation_reason_msg">Please enter reason for cancellation</string>
+    <string name="empty_color_msg">Color can\'t be empty!</string>
+    <string name="empty_model_msg">Model number can\'t be empty!</string>
+    <string name="empty_car_make_msg">Car make can\'t be empty!</string>
+    <string name="empty_plate_msg">Car Plate can\'t be empty!</string>
+    <string name="empty_licence_msg">Driver\'s Licence can\'t be empty!</string>
+    <string name="unaccept_tnc_msg">Please accept the terms and conditions.</string>
+    <string name="empty_review_msg">Review can\'t be empty!</string>
+
+    <string name="invalid_name_msg">Invalid name!</string>
+    <string name="invalid_phone_msg">Invalid phone number!</string>
+    <string name="invalid_email_msg">Invalid email!</string>
+    <string name="invalid_confirm_email_msg">Confirm Email mismatch!</string>
+    <string name="invalid_dob_msg">Invalid date of birth!</string>
+    <string name="invalid_password_msg">Password should contain at least one capital letter, one number, one special character and minimum 8 characters</string>
+    <string name="password_mistach_msg">Confirm Password mismatch!</string>
+
+    <string name="accept_tnc_msg">By creating an account you agree to our Terms</string>
+    <string name="select_university_msg">Please select a University</string>
+    <string name="empty_notification_msg">Whoops! We couldn\'t find any notifications!</string>
+    <string name="empty_ride_msg">Whoops! We couldn\'t find any rides!</string>
+    <string name="empty_chat_msg">Whoops! We couldn\'t find any chat!</string>
+    <string name="empty_review_list_msg">Whoops! We couldn\'t find any rating!</string>
+
+    <string name="unknown_error_msg">Whoops! Some unknown error occurred!</string>
+    <string name="logout_msg">Are you sure you want to logout?</string>
+
+    <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_parking">Parking Lots</string>
+    <string name="nav_menu_accept_request">Accept a Request</string>
+    <string name="nav_menu_notifications">Notifications</string>
+    <string name="nav_menu_accept">Accept a Request</string>
+    <string name="nav_menu_parking_lots">Parking Lots</string>
+    <string name="title_history">History</string>
+    <string name="title_about_us">About Us</string>
+
+    <string name="nav_menu_settings">Settings</string>
+    <string name="nav_menu_aboutus">About Us</string>
+    <string name="nav_menu_logout">Logout</string>
+
+    <string name="nav_drawer_open">Open</string>
+    <string name="nav_drawer_close">Close</string>
+
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_start_trip">Start Trip</string>
+    <string name="btn_did_not">Did Not Show up</string>
+    <string name="btn_complete_trip">Complete Trip</string>
+
+
+    <string name="processing_msg">Processing…</string>
+    <string name="file_upload_size_error">File size is greater than 5 MB. Please upload file less than 5 MB.</string>
+    <string name="network_error_msg">It seems you have lost network connectivity.</string>
+    <string name="fcm_not_supported_msg">This device is not supported for receiving fcm push notifications</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="default_notification_channel_name">Updates</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pick_up_label">PICK UP</string>
+    <string name="cancel_request">You have already requested a ride, to book another ride you need to cancel your previous request. Do you want to cancel the previous request?</string>
+    <string name="dialog_success_message">Your Ride Request has been confirmed. You are requesting to be picked up at </string>
+    <string name="dialog_confirmation_message">Do you want to schedule a ride</string>
+    <string name="parking_lots_content">The Direct Parking Team</string>
+    <string name="parking_lots_content_first">\u2022 This feature will display bird’s eye views of various parking lot layouts on your college campus to the Direct Parking App.</string>
+    <string name="parking_lots_content_second">The occupancy of a parking spot will display as green if open or as red if occupied. If you would like to see this feature integrated with your college campus.</string>
+    <string name="parking_lots_content_third">Please inform your college representatives and email us at support@directparking.net. We will do our best in working with your school to quickly incorporate this feature and continue improving your parking experience.</string>
+
+    <string name="parking_lot_content">This feature will display bird’s eye views of various parking lot layouts on your college campus to the Direct Parking App. The occupancy of a parking spot will display as green if open or as red if occupied. If you would like to see this feature integrated with your college campus,please inform your college representatives and email us at support@directparking.net. We will  do our best in working with your school to quickly incorporate this feature and continue improving your parking experience.\n\n\n\n-The Direct Parking Team\n</string>
+    <string name="about_us_content">The purpose of the Direct Parking App is to assist college students in finding a parking spot on campus
+quicker than it would normally take them. Parking is a common issue among college campuses as the
+amount of parking spots are significantly less than the overall population of students attending the
+university. This results in congested and overcrowded parking lots, which can lead to increased stress in
+students as they waste time and gas searching for a spot.\nDirect Parking aims to give college students a better overall parking experience by allowing students to
+exchange rides with one another for parking spots. One student gets a ride to where they parked while
+the other student secures a parking spot by giving that student a ride to their spot.\nDirect Parking was developed and engineered by Direct Engineering Technologies, with mobile
+development by Appsimity Solutions.</string>
+
+  <!--  DEBUG KEY-->
+    <string name="google_admob_key">ca-app-pub-3940256099942544~3347511713</string>
+
+   <!-- DEBUG KEY-->
+        <string name="google_admob_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+
+   <!-- <string name="google_admob_unit_id">ca-app-pub-1419389556712815/6742930189</string>-->
+
+
+    <!--<string name="google_app_id">AIzaSyBuVHG-zyz4z8umt5dWmkvc-JLVGmJ_8E0</string>-->
+
+    <string-array name="setting_list">
+        <item>Change Password</item>
+        <item>Edit Profile</item>
+    </string-array>
+</resources>

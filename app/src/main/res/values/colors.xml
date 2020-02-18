@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="trans_white">#80ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="light_grey">#ededed</color>
+    <color name="medium_grey">#a6a6a6</color>
+    <color name="average_grey">#4c4c50</color>
+    <color name="dark_grey">#363F46</color>
+    <color name="black">#000000</color>
+    <color name="bluish_grey">#363f46</color>
+    <color name="trans_black">#b6000000</color>
+    <color name="blue">#0894E7</color>
+    <color name="dark_blue">#0894E7</color>
+    <color name="yellow">#00639c</color>
+    <color name="dark_yellow">#478cb4</color>
+    <color name="orange">#fe4c13</color>
+    <color name="upcoming_color">#0baffc</color>
+    <color name="ongoing">#27aa0b</color>
+    <color name="cancelled">#fe4606</color>
+    <color name="pending_color">#cc9a05</color>
+    <color name="green">#58b31b</color>
+    <color name="reject">#dfdfdf</color>
+    <color name="primary_text_color">#808080</color>
+    <color name="grey_background">#ededed</color>
+    <color name="rating_color">#fdc006</color>
+
+</resources>

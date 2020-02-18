@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/layout_flag_holder"
+        android:layout_width="18dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_country_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/flag_india" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_country_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/layout_flag_holder"
+        android:layout_toLeftOf="@+id/tv_country_code"
+        android:layout_toRightOf="@+id/layout_flag_holder"
+        android:layout_toStartOf="@+id/tv_country_code"
+        android:gravity="center_vertical"
+        android:text="India (IN)"
+        android:textColor="@android:color/secondary_text_light" />
+
+    <TextView
+        android:id="@+id/tv_country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingEnd="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingStart="7dp"
+        android:textColor="@android:color/secondary_text_light"
+        tools:text="+91" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/light_grey" />
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center_vertical"
+        android:padding="18dp"
+        android:text="@string/reason_cancel_title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/light_grey" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="@color/medium_grey"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_cancel_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="start|center_vertical"
+            android:textColorHint="@color/medium_grey"
+            android:hint="@string/hint_write_comment"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_ride_reason_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/btn_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_ride_reason_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/btn_send"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+             />
+    </LinearLayout>
+</LinearLayout>

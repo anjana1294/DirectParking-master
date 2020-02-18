@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.directparking.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:exported="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_title"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/CustomAppTheme"
+        tools:replace="android:name, android:label, android:supportsRtl, android:theme">
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.password.forgot.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.signup.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".fcm.FetchFcmTokenService" />
+        <service
+            android:name=".fcm.TokenRefreshListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fcm.FcmMessageReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/blue" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="121b68e25b48a80dbb656f84142abf8d7728f103" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDzXvyJVHpVjnLD76V1iMyEDigUn1SQ0Cs" />
+       <!-- <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1419389556712815~5414710103"/>-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.confrimation.ConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.review.post.ReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.chatlist.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.review.view.ViewReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.messages.MessageActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
